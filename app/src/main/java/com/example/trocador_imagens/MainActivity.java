@@ -1,5 +1,5 @@
 package com.example.trocador_imagens;
-
+//Alunos: Lucas Aguiar Cera e Renan Wenzel
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     imgApp.setImageResource(R.drawable.pedra);
 
-                    if(imageClicked.getId() == R.id.imgPapel){
+                    if(imageClicked.getId() == R.id.imgPapel){ //Dúvida: Tem como otimizar o código nessa parte? Pensei em fazer uma função pra mudar a cor,
+                        //porque ficou meio feio do jeito que está.
                         pointsPlayer += 1;
                         imgPedra.setBackgroundColor(Color.parseColor("#00FFFFFF"));
                         imgTesoura.setBackgroundColor(Color.parseColor("#00FFFFFF"));
